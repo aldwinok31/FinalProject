@@ -33,14 +33,21 @@ var data :ArrayList<Album> = list
         val name = pmon.name
         val artist = pmon.artist
         val url = pmon.image
-if(url != "" || url != null) {
+if(url != "" && url != null) {
     val ins = URL(url).openStream()
 
 
     var mIcon = BitmapFactory.decodeStream(ins)
     holder!!.imageView.setImageBitmap(mIcon)
-    holder!!.descript.setText(name + " \n" + artist)
 }
+
+        else{
+
+    holder!!.imageView.setBackgroundResource(R.drawable.ic_launcher_foreground)
+
+}
+    holder!!.descript.setText(name + " \n" + artist)
+
     }
 
 
