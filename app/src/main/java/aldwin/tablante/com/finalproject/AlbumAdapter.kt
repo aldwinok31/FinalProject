@@ -43,7 +43,7 @@ if(url != "" && url != null) {
 
         else{
 
-    holder!!.imageView.setBackgroundResource(R.drawable.ic_launcher_foreground)
+    holder!!.imageView.setBackgroundResource(R.drawable.ic_launcher_background)
 
 }
     holder!!.descript.setText(name + " \n" + artist)
